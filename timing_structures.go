@@ -40,12 +40,15 @@ type Timing struct {
 }
 
 type Email struct {
-	Id        string `json:"id"`
-	Status    string `json:"status"`
-	Type      string `json:"type"`
-	To        string `json:"to"`
-	ReportUrl string `json:"reportUrl"`
-	UserName  string `json:"userName"`
+	Id             string `json:"id"`
+	Status         string `json:"status"`
+	Type           string `json:"type"`
+	To             string `json:"to"`
+	ReportUrl      string `json:"reportUrl"`
+	UserName       string `json:"userName"`
+	ContactName    string `json:"contactName"`
+	ContactEmail   string `json:"contactEmail"`
+	ContactMessage string `json:"contactMessage"`
 }
 
 type Config struct {

@@ -27,6 +27,7 @@ type Queue struct {
 	UserId         string    `gorethink:"userId"`
 	Status         string    `gorethink:"status"`
 	CreateDateTime time.Time `gorethink:"createDateTime"`
+	Email          string    `gorethink:"status"`
 }
 
 type Timing struct {

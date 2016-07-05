@@ -30,6 +30,16 @@ type Queue struct {
 	Email          string    `gorethink:"email"`
 }
 
+type Group struct {
+	Id            string    `gorethink:"id,omitempty"`
+	Title         string    `gorethink:"title"`
+	Email         string    `gorethink:"email"`
+	IsEmail       string    `gorethink:"isEmail"`
+	Repeat        string    `gorethink:"repeat"`
+	IsRepeat      string    `gorethink:"isRepeat"`
+	LastDateCheck time.Time `gorethink:"lastDateCheck"`
+}
+
 type Timing struct {
 	TimingId string  `json:"timingId"`
 	Url      string  `json:"url"`

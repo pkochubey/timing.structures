@@ -32,11 +32,11 @@ type Queue struct {
 
 type Group struct {
 	Id            string    `gorethink:"id,omitempty"`
-	Title         string    `gorethink:"title"`
+	Name          string    `gorethink:"name"`
 	Email         string    `gorethink:"email"`
-	IsEmail       string    `gorethink:"isEmail"`
+	IsEmail       bool      `gorethink:"isEmail"`
 	Repeat        string    `gorethink:"repeat"`
-	IsRepeat      string    `gorethink:"isRepeat"`
+	IsRepeat      bool      `gorethink:"isRepeat"`
 	LastDateCheck time.Time `gorethink:"lastDateCheck"`
 }
 

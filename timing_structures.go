@@ -31,14 +31,14 @@ type Queue struct {
 }
 
 type Group struct {
-	Id            string    `gorethink:"id,omitempty"`
-	UserId        string    `gorethink:"userId"`
-	Name          string    `gorethink:"name"`
-	Email         string    `gorethink:"email"`
-	IsEmail       bool      `gorethink:"isEmail"`
-	Repeat        int       `gorethink:"repeat"`
-	IsRepeat      bool      `gorethink:"isRepeat"`
-	LastDateCheck time.Time `gorethink:"lastDateCheck"`
+	Id            string      `gorethink:"id,omitempty"`
+	UserId        string      `gorethink:"userId"`
+	Name          string      `gorethink:"name"`
+	Email         string      `gorethink:"email"`
+	IsEmail       bool        `gorethink:"isEmail"`
+	Repeat        int         `gorethink:"repeat"`
+	IsRepeat      bool        `gorethink:"isRepeat"`
+	LastDateCheck interface{} `gorethink:"lastDateCheck"`
 }
 
 type Timing struct {

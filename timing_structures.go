@@ -39,15 +39,23 @@ type Group struct {
 	Repeat        int         `gorethink:"repeat"`
 	IsRepeat      bool        `gorethink:"isRepeat"`
 	LastDateCheck interface{} `gorethink:"lastDateCheck"`
+	Auth          string      `gorethink:"auth"`
+	AuthCookie    string      `gorethink:"authCookie"`
+	AuthPassword  string      `gorethink:"authPassword"`
+	AuthUser      string      `gorethink:"authUser"`
 }
 
 type Timing struct {
-	TimingId string  `json:"timingId"`
-	Url      string  `json:"url"`
-	MinTime  float64 `json:"minTime"`
-	MaxTime  float64 `json:"maxTime"`
-	AvgTime  float64 `json:"avgTime"`
-	Status   string  `json:"status"`
+	TimingId     string  `json:"timingId"`
+	Url          string  `json:"url"`
+	MinTime      float64 `json:"minTime"`
+	MaxTime      float64 `json:"maxTime"`
+	AvgTime      float64 `json:"avgTime"`
+	Status       string  `json:"status"`
+	Auth         string  `json:"auth"`
+	AuthCookie   string  `json:"authCookie"`
+	AuthPassword string  `json:"authPassword"`
+	AuthUser     string  `json:"authUser"`
 }
 
 type Email struct {

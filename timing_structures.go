@@ -16,9 +16,13 @@ type Template struct {
 }
 
 type Link struct {
-	LinkId string `json:"linkId"`
-	Url    string `json:"url"`
-	Title  string `json:"title"`
+	LinkId       string `json:"linkId"`
+	Url          string `json:"url"`
+	Title        string `json:"title"`
+	Auth         string `json:"auth"`
+	AuthCookie   string `json:"authCookie"`
+	AuthPassword string `json:"authPassword"`
+	AuthUser     string `json:"authUser"`
 }
 
 type Queue struct {

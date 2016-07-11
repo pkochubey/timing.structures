@@ -60,6 +60,7 @@ type Timing struct {
 	AuthCookie   string  `json:"authCookie"`
 	AuthPassword string  `json:"authPassword"`
 	AuthUser     string  `json:"authUser"`
+	NodeName     string  `json:"nodeName"`
 }
 
 type Email struct {

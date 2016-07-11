@@ -76,7 +76,7 @@ type Email struct {
 }
 
 type Config struct {
-	NodeName string
+	NodeName  string
 	RethinkDB struct {
 		Server string
 		DB     string
